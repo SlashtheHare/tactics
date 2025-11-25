@@ -6,9 +6,9 @@ const commentary = [
 ];
 
 const tactics = {
-  "Noise-Cancelling Headphones": "When overstimulated, put these on to reduce sensory input.",
-  "Deep Breathing": "Slow, deliberate breaths to calm the nervous system.",
-  "Movement Break": "Stretch, walk, or pace to release energy and reset focus."
+  "Dancing": "Works for both over and understimulation; put on a song you like (rec: Aphex Twin) and just dance to it till you feel better.",
+  "Shaking": "Lay down on the bed with your legs halfway off it, then start shaking your legs up and down. The rhythmic movement can help release tension.",
+  "Drawing Vent Art": "Just get anything that you can draw on and draw whatever you can to take the energy out, no matter if it's good or not."
 };
 
 function randomCommentary() {
