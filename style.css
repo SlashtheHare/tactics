@@ -1,15 +1,17 @@
 /* Apply Hanken Grotesk globally */
 body {
   font-family: "Hanken Grotesk", sans-serif;
-  background: #e0e0e0;
+  background-image: url('bg.png'); /* replace with your file */
+  background-size: cover;       /* scale to fill screen */
+  background-repeat: no-repeat; /* no tiling */
+  background-position: center;  /* keep centered */
+  min-height: 100vh;            /* force body to fill viewport */
+  margin: 0;                    /* remove default spacing */
   text-align: center;
   padding: 40px;
   color: #333;
-  background-image: url('bg.png'); /* replace with your image filename */
-  background-size: cover;       /* scales image to fill screen */
-  background-repeat: no-repeat; /* prevents tiling */
-  background-position: center;  /* keeps it centered */
 }
+
 
 h1 {
   font-size: 32px;
