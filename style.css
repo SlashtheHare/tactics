@@ -9,9 +9,18 @@ body {
   margin: 0;                    /* remove default spacing */
   text-align: center;
   padding: 40px;
-  color: #333;
+  color: #fff;                  /* default text white */
 }
 
+/* Title and subtitle with background */
+h1, p {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin: 10px auto;
+  color: #fff; /* white text */
+}
 
 h1 {
   font-size: 32px;
@@ -22,6 +31,7 @@ p {
   font-size: 18px;
 }
 
+/* Doors */
 .doors {
   display: flex;
   justify-content: center;
@@ -32,54 +42,58 @@ p {
 .door {
   width: 120px;
   height: 200px;
-  background-image: url('door1.png'); /* closed door */
+  background-image: url('door1.png'); /* closed door sprite */
   background-size: cover;
   cursor: pointer;
   transition: transform 0.2s;
-  margin: 20px; /* keep spacing between doors */
+  margin: 20px;
 }
 
 .door:hover {
-  background-image: url('door2.png'); /* open door */
+  background-image: url('door2.png'); /* open door sprite */
   transform: scale(1.05);
 }
 
-
+/* Room content box */
 .room-content {
   margin-top: 30px;
   padding: 20px;
-  background: #fff;
-  border: 2px solid #333;
+  background: rgba(0,0,0,0.6); /* match subtitle style */
+  border-radius: 6px;
   display: none; /* hide by default */
   max-width: 400px;
   font-size: 18px;
+  color: #fff; /* white text */
 }
 
+/* Close button */
 #close-room {
   margin-top: 15px;
   padding: 8px 12px;
   background: #f4d03f;
-  border: 2px solid #333;
+  border: none;
   cursor: pointer;
   font-family: "Hanken Grotesk", sans-serif;
-  transition: background 0.2s;
+  border-radius: 4px;
 }
 
 #close-room:hover {
   background: #f7e46c;
 }
 
+/* Narrator box centered at bottom */
 .narrator-box {
   position: fixed;
   bottom: 20px;
-  left: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
   color: white;
   font-family: "Hanken Grotesk", sans-serif;
   font-size: 16px;
   padding: 12px 16px;
   border-radius: 6px;
-  max-width: 320px;
+  max-width: 80%;
   box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  text-align: left;
+  text-align: center;
 }
