@@ -26,17 +26,18 @@ p {
 .door {
   width: 120px;
   height: 200px;
-  background-image: url('door1-door.png'); /* closed door sprite */
+  background-image: url('door1.png'); /* closed door */
   background-size: cover;
-  border: 3px solid #333;
   cursor: pointer;
   transition: transform 0.2s;
+  margin: 20px; /* keep spacing between doors */
 }
 
 .door:hover {
-  background-image: url('door2.png'); /* open door sprite */
+  background-image: url('door2.png'); /* open door */
   transform: scale(1.05);
 }
+
 
 .room-content {
   margin-top: 30px;
