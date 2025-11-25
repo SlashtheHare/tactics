@@ -26,7 +26,7 @@ p {
 .door {
   width: 120px;
   height: 200px;
-  background-image: url('closed-door.png'); /* closed door sprite */
+  background-image: url('door1-door.png'); /* closed door sprite */
   background-size: cover;
   border: 3px solid #333;
   cursor: pointer;
@@ -34,7 +34,7 @@ p {
 }
 
 .door:hover {
-  background-image: url('open-door.png'); /* open door sprite */
+  background-image: url('door2.png'); /* open door sprite */
   transform: scale(1.05);
 }
 
