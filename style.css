@@ -19,16 +19,15 @@ h1 {
 .door {
   width: 120px;
   height: 200px;
-  background: #f4d03f; /* Stanley Parable yellow */
+  background-image: url('door1.png'); /* closed door sprite */
+  background-size: cover;
   border: 3px solid #333;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
   transition: transform 0.2s;
 }
 
 .door:hover {
+  background-image: url('door2.png'); /* open door sprite */
   transform: scale(1.05);
 }
 
