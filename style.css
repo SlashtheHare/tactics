@@ -42,8 +42,8 @@ p {
 }
 
 .door {
-  width: 80px;              /* smaller width to match wall scale */
-  height: 140px;            /* shorter height to match perspective */
+  width: auto;              /* smaller width to match wall scale */
+  height: 380px;            /* shorter height to match perspective */
   background-image: url('door1.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -52,7 +52,7 @@ p {
   transition: transform 0.2s;
   margin: 10px;             /* tighter spacing */
   position: relative;
-  top: -20px;               /* nudge upward to align with wall */
+  top: 100px;               /* nudge upward to align with wall */
 }
 .door:hover {
   background-image: url('door2.png');
