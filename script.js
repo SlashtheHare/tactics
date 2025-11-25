@@ -19,10 +19,22 @@ function randomCommentary() {
 document.querySelectorAll(".door").forEach(door => {
   door.addEventListener("click", () => {
     const roomName = door.dataset.room;
-    document.getElementById("room-content").innerHTML = `
+    const roomBox = document.getElementById("room-content");
+
+    // Insert tactic content + close button
+    roomBox.innerHTML = `
       <h2>${roomName}</h2>
       <p>${tactics[roomName]}</p>
+      <button id="close-room">Close</button>
     `;
+    roomBox.style.display = "inline-block";
+
+    // Add event listener for close button
+    document.getElementById("close-room").addEventListener("click", () => {
+      roomBox.style.display = "none";
+      roomBox.innerHTML = ""; // clear content
+    });
+
     randomCommentary();
   });
 });

@@ -43,9 +43,23 @@ p {
   padding: 20px;
   background: #fff;
   border: 2px solid #333;
-  display: inline-block;
+  display: none; /* hide by default */
   max-width: 400px;
   font-size: 18px;
+}
+
+#close-room {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background: #f4d03f;
+  border: 2px solid #333;
+  cursor: pointer;
+  font-family: "Hanken Grotesk", sans-serif;
+  transition: background 0.2s;
+}
+
+#close-room:hover {
+  background: #f7e46c;
 }
 
 .narrator-box {
