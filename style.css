@@ -45,7 +45,7 @@ p {
   width: auto;              /* smaller width to match wall scale */
   height: 380px;            /* shorter height to match perspective */
   background-image: url('door1.png');
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
