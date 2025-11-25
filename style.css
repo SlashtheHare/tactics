@@ -52,7 +52,7 @@ p {
   transition: transform 0.2s;
   margin: 10px;             /* tighter spacing */
   position: relative;
-  top: 100px;               /* nudge upward to align with wall */
+  top: 50px;               /* nudge upward to align with wall */
 }
 .door:hover {
   background-image: url('door2.png');
