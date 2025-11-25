@@ -1,12 +1,19 @@
+/* Apply Hanken Grotesk globally */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
   background: #e0e0e0;
   text-align: center;
   padding: 40px;
+  color: #333;
 }
 
 h1 {
-  color: #333;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
 }
 
 .doors {
@@ -19,7 +26,7 @@ h1 {
 .door {
   width: 120px;
   height: 200px;
-  background-image: url('door1.png'); /* closed door sprite */
+  background-image: url('closed-door.png'); /* closed door sprite */
   background-size: cover;
   border: 3px solid #333;
   cursor: pointer;
@@ -27,7 +34,7 @@ h1 {
 }
 
 .door:hover {
-  background-image: url('door2.png'); /* open door sprite */
+  background-image: url('open-door.png'); /* open door sprite */
   transform: scale(1.05);
 }
 
@@ -38,15 +45,20 @@ h1 {
   border: 2px solid #333;
   display: inline-block;
   max-width: 400px;
+  font-size: 18px;
 }
 
 .narrator-box {
   position: fixed;
   bottom: 20px;
   left: 20px;
-  background: rgba(255,255,255,0.9);
-  border: 2px solid #333;
-  padding: 10px;
-  font-style: italic;
-  max-width: 300px;
+  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  color: white;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 16px;
+  padding: 12px 16px;
+  border-radius: 6px;
+  max-width: 320px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  text-align: left;
 }
