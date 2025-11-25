@@ -14,13 +14,15 @@ body {
 
 /* Title and subtitle with background */
 h1, p {
-  display: inline-block;
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent black */
+  display: block; /* ensures vertical stacking */
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 10px 20px;
   border-radius: 6px;
   margin: 10px auto;
-  color: #fff; /* white text */
+  color: #fff;
+  text-align: center;
 }
+
 
 h1 {
   font-size: 32px;
